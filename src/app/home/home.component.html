@@ -1,0 +1,70 @@
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+<div class="content" role="main">
+  <img
+    width="100px"
+    alt="Angular Logo"
+    src="assets/images/dirty-wattz-logo.jpg"
+  />
+  <div class="">
+    <h2>Welcome to DIRTy Wattz!</h2>
+  </div>
+  <h2>About Us:</h2>
+  <p>Dad's Inside Riding Trainers</p>
+  <p>Here are some links to help you get started:</p>
+  <div class="card-container">
+    <button (click)="captainsRecords()" class="card">
+      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82zM12 3L1 9l11 6 9-4.91V17h2V9L12 3z"/></svg>
+      <span>Captains Records</span>
+      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>    </button>
+
+    <button (click)="streams()" class="card">
+      <span class="material-icons">photo_camera</span>
+      <span>Live Streams</span>
+      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
+    </button>
+    <router-outlet></router-outlet>
+
+    <button (click)="information()" class="card">
+      <span class="material-icons">info</span>
+      <span>Information</span>
+      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
+    </button>
+
+    <button (click)="registration()" class="card">
+      <span class="material-icons">local_fire_department</span>
+      <span>Registration</span>
+      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
+    </button>
+
+    <button (click)="results()" class="card" target="_blank" rel="noopener" href="https://angular.io/devtools/">
+      <span class="material-icons">bolt</span>
+      <span>Results</span>
+      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
+    </button>
+
+  </div>
+  <!-- Links -->
+  <div class="card-container">
+    <a class="circle-link" title="Join the Conversation on Discord" href="https://discord.gg/nhEEuXrv" target="_blank" rel="noopener">
+      <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 245 240">
+        <title>Discord Logo</title>
+        <path d="M104.4 103.9c-5.7 0-10.2 5-10.2 11.1s4.6 11.1 10.2 11.1c5.7 0 10.2-5 10.2-11.1.1-6.1-4.5-11.1-10.2-11.1zM140.9 103.9c-5.7 0-10.2 5-10.2 11.1s4.6 11.1 10.2 11.1c5.7 0 10.2-5 10.2-11.1s-4.5-11.1-10.2-11.1z"/>
+        <path d="M189.5 20h-134C44.2 20 35 29.2 35 40.6v135.2c0 11.4 9.2 20.6 20.5 20.6h113.4l-5.3-18.5 12.8 11.9 12.1 11.2 21.5 19V40.6c0-11.4-9.2-20.6-20.5-20.6zm-38.6 130.6s-3.6-4.3-6.6-8.1c13.1-3.7 18.1-11.9 18.1-11.9-4.1 2.7-8 4.6-11.5 5.9-5 2.1-9.8 3.5-14.5 4.3-9.6 1.8-18.4 1.3-25.9-.1-5.7-1.1-10.6-2.7-14.7-4.3-2.3-.9-4.8-2-7.3-3.4-.3-.2-.6-.3-.9-.5-.2-.1-.3-.2-.4-.3-1.8-1-2.8-1.7-2.8-1.7s4.8 8 17.5 11.8c-3 3.8-6.7 8.3-6.7 8.3-22.1-.7-30.5-15.2-30.5-15.2 0-32.2 14.4-58.3 14.4-58.3 14.4-10.8 28.1-10.5 28.1-10.5l1 1.2c-18 5.2-26.3 13.1-26.3 13.1s2.2-1.2 5.9-2.9c10.7-4.7 19.2-6 22.7-6.3.6-.1 1.1-.2 1.7-.2 6.1-.8 13-1 20.2-.2 9.5 1.1 19.7 3.9 30.1 9.6 0 0-7.9-7.5-24.9-12.7l1.4-1.6s13.7-.3 28.1 10.5c0 0 14.4 26.1 14.4 58.3 0 0-8.5 14.5-30.6 15.2z"/>
+      </svg>
+    </a>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <a href="https://github.com/poofsgit" target="_blank" rel="noopener">Support Dirty Watts's Devs & give me advice to better this page!
+      <div class="github-cycling-badge">
+        <i class="material-icons">directions_bike</i>
+      </div>
+    </a>
+  </footer>
+
+  <div class="zwift">
+    <img src="assets/images/zwift-background-img.jpg" alt=""></div>
+</div>
+
